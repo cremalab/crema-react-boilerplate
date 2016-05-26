@@ -4,8 +4,8 @@
   "description": "The starting point for our web-based React projects",
   "main": "index.js",
   "scripts": {
-    "start": "",
-    "test": ""
+    "start": "echo \"Error: no start script specified\" && exit ",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
