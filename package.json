@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/cremalab/crema-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/cremalab/crema-react-boilerplate#readme"
+  "homepage": "https://github.com/cremalab/crema-react-boilerplate#readme",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
+    "webpack": "^1.13.1"
+  }
 }
