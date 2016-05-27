@@ -1,11 +1,12 @@
-import webpack from 'webpack';
-import path from 'path';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import webpack from 'webpack'
+import path from 'path'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('production'),
   __DEV__: false
-};
+}
 
 export default {
   debug: true,
@@ -41,4 +42,4 @@ export default {
       }
     ]
   }
-};
+}
