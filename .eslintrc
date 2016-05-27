@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "babel"
+  ],
+  "globals": {
+    "module": false,
+    "API_URL": false,
+    "STRIPE_PUBLISHABLE_KEY": false,
+    "INTERCOM_ID": false,
+    "Stripe": false,
+    "google": false,
+    "it": false,
+    "describe": false,
+    "require": false,
+    "afterEach": false,
+  },
+  "rules": {
+    "react/jsx-uses-vars": 1,
+    "react/jsx-uses-react": 1,
+    "babel/new-cap": 0,
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "never"],
+    "strict": 0,
+    "no-case-declarations": 2,
+  }
+}

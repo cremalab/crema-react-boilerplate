@@ -1,7 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux';
-import { Router, browserHistory } from 'react-router';
+import React from "react"
+import { render } from "react-dom"
+import { Provider } from "react-redux"
+import { Router, browserHistory } from "react-router"
 //import routes from './routes';
 //import configureStore from './store/configureStore';
 
@@ -13,5 +13,5 @@ class App extends React.Component {
 
 render(
   <App />,
-  document.getElementById('app')
+  document.getElementById("app")
 )
