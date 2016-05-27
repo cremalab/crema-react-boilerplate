@@ -30,6 +30,9 @@ export default {
       template: './src/index.html'
     })
   ],
+  resolve: {
+    root: path.resolve('./src')
+  },
   module: {
     loaders: [
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['react-hot', 'babel']},
