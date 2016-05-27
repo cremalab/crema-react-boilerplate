@@ -18,15 +18,6 @@
   ],
   "globals": {
     "module": false,
-    "API_URL": false,
-    "STRIPE_PUBLISHABLE_KEY": false,
-    "INTERCOM_ID": false,
-    "Stripe": false,
-    "google": false,
-    "it": false,
-    "describe": false,
-    "require": false,
-    "afterEach": false,
   },
   "rules": {
     "react/jsx-uses-vars": 1,
