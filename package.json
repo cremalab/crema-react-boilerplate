@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/cremalab/crema-react-boilerplate#readme",
   "dependencies": {
+    "clear": "0.0.1",
     "compression": "^1.6.2",
     "express": "^4.13.4",
     "react": "15.0.2",
