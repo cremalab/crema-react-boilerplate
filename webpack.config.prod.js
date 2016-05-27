@@ -1,17 +1,17 @@
-import webpack from 'webpack'
-import path from 'path'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
+var webpack = require('webpack');
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
-const GLOBALS = {
-  'process.env.NODE_ENV': JSON.stringify('production'),
+var GLOBALS = {
+  'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   __DEV__: false
 }
 
-export default {
+module.exports = {
   debug: true,
   devtool: 'source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
-  noInfo: true, // set to false to see a list of every file being bundled.
+  noInfo: false, // set to false to see a list of every file being bundled.
   entry: './src/index',
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
@@ -24,7 +24,10 @@ export default {
     new webpack.DefinePlugin(GLOBALS), // Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
     new ExtractTextPlugin('styles.css'),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ],
   module: {
     loaders: [
