@@ -31,6 +31,7 @@
   "dependencies": {
     "clear": "0.0.1",
     "compression": "1.6.2",
+    "dotenv": "2.0.0",
     "express": "4.13.4",
     "react": "15.0.2",
     "react-dom": "15.0.2",
