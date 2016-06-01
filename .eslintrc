@@ -21,6 +21,7 @@
     "process": false,
     "require": false,
     "exports": false,
+    "__dirname": false,
   },
   "rules": {
     "react/jsx-uses-vars": 1,
