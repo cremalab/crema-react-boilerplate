@@ -18,6 +18,9 @@
   ],
   "globals": {
     "module": false,
+    "process": false,
+    "require": false,
+    "exports": false,
   },
   "rules": {
     "react/jsx-uses-vars": 1,
@@ -29,5 +32,6 @@
     "semi": ["error", "never"],
     "strict": 0,
     "no-case-declarations": 2,
+    "no-console": 0
   }
 }

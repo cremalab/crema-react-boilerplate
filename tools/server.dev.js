@@ -9,9 +9,10 @@ new WebpackDevServer(webpack(config), {
   hot: true,
   quiet: true,
   historyApiFallback: true
-}).listen(port, 'localhost', function (err, result) {
+}).listen(port, 'localhost', function (err) {
   if (err) {
-    return console.log(err)
+    console.log(err)
+    return
   }
   console.log(`Listening at http://localhost:${port}/`)
 })
