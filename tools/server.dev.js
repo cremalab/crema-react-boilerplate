@@ -1,8 +1,8 @@
 require('dotenv').config()
+const  port = process.env.PORT || 3000
 import webpack from 'webpack'
 import WebpackDevServer from 'webpack-dev-server'
 import config from '../webpack.config.dev'
-const  port = process.env.PORT || 3000
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,

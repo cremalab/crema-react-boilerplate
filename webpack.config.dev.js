@@ -1,7 +1,11 @@
+require('dotenv').config()
+
 import webpack from 'webpack'
 import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 const  port = process.env.PORT || 3000
+
+console.log(port);
 
 const GLOBALS = {
   'process.env.NODE_ENV': JSON.stringify('development'),
